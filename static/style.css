@@ -1,0 +1,58 @@
+:root {
+    --iocl-blue: #003399;
+    --iocl-orange: #FF6600;
+}
+
+body { background: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.chat-container {
+    max-width: 500px; margin: 50px auto; background: white;
+    border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden; display: flex; flex-direction: column; height: 80vh;
+}
+
+.chat-header {
+    background: var(--iocl-blue); color: white; padding: 15px;
+    display: flex; align-items: center; gap: 10px;
+}
+
+.chat-header img { height: 40px; background: white; border-radius: 5px; padding: 2px; }
+
+.chat-box { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+
+.message { padding: 10px 15px; border-radius: 15px; max-width: 80%; font-size: 14px; }
+.user-msg { background: #e1ffc7; align-self: flex-end; border-bottom-right-radius: 2px; }
+.bot-msg { background: #f1f1f1; align-self: flex-start; border-bottom-left-radius: 2px; border-left: 4px solid var(--iocl-orange); }
+
+.input-area { padding: 15px; border-top: 1px solid #eee; display: flex; gap: 10px; }
+.input-area input { flex: 1; border: 1px solid #ddd; padding: 10px; border-radius: 20px; outline: none; }
+.input-area button { background: var(--iocl-orange); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; }
+
+.typing-indicator { font-size: 12px; color: #888; padding: 0 20px; display: none; }
+
+
+.chat-header {
+    display: flex;
+    align-items: center; /* Logo aur text ko vertically center karega */
+    padding: 10px 15px;
+    background-color: #00458b; /* IOCL Blue */
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chat-header img {
+    width: 35px;         /* Logo ka size chota karne ke liye */
+    height: 35px;        /* Logo ka size chota karne ke liye */
+    margin-right: 12px;  /* Logo aur "IOCL Sahayak" ke beech gap */
+    object-fit: contain; /* Logo stretch nahi hoga */
+    background-color: white; /* Logo ke peeche white circle (optional) */
+    border-radius: 50%;  /* Logo ko round shape dene ke liye */
+    padding: 2px;        /* White border jaisa dikhega */
+}
+
+.chat-header h5 {
+    margin: 0;           /* Extra space hatane ke liye */
+    font-size: 1.2rem;
+    font-weight: 500;
+}

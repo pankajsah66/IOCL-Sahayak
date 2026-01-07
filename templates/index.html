@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOCL Sahayak - Virtual Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Indian_Oil_Logo.svg/1200px-Indian_Oil_Logo.svg.png" alt="Logo">
+            <h5>IOCL Sahayak</h5>
+        </div>
+        <div id="chat-box" class="chat-box">
+            <div class="message bot-msg">Hello! I am your IOCL assistant. How can I help you today?</div>
+        </div>
+        <div class="typing-indicator" id="typing">Assistant is typing...</div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your query (e.g. LPG booking)..." autocomplete="off">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOCL Sahayak - Virtual Assistant</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <img src=https://upload.wikimedia.org/wikipedia/commons/a/a3/Indian_Oil_Logo.svg alt="IOCL Logo">
+                <div class="header-text">
+                    <h5>IOCL Sahayak</h5>
+                    <small>Online | Virtual Assistant</small>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-box" class="chat-box">
+            <div class="message bot-msg">
+                Hello! I am your IOCL assistant. How can I help you today?
+            </div>
+        </div>
+
+        <div class="typing-indicator" id="typing">
+            <span></span><span></span><span></span> Assistant is typing...
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your query (e.g. LPG booking)..." autocomplete="off">
+            <button id="send-btn" onclick="sendMessage()">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
